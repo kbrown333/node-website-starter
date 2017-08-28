@@ -99,12 +99,12 @@ if (!process.env.PROD_FLAG) {
         });
     });
 } else {
-    // production error handler
-    // no stacktraces leaked to user
-    // app.use(function (err, req, res, next) {
-    //     console.dir(err);
-    //     res.render('unknown_error', global.app_config);
-    // });
+    //production error handler
+    //no stacktraces leaked to user
+    app.use(function (err, req, res, next) {
+        console.dir(err);
+        res.render('unknown_error', global.app_config);
+    });
 }
 
 var debug = require('debug')('IoTShaman');
