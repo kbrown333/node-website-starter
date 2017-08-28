@@ -1,0 +1,5 @@
+User-Agent: *
+Disallow: /private/admin
+Disallow: /auth/
+Disallow: /private/blog/preview
+Disallow: /private/blog/preview_page

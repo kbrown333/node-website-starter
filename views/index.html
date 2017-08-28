@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <% include ./partials/header_tags %>
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+    <% if (is_prod) { %>
+        <% include ./partials/prd_scripts %>
+    <% } %>
+    <% if (!is_prod) { %>
+        <% include ./partials/dev_scripts %>
+    <% } %>
+</head>
+<body>
+    <div class="site-wrapper">
+        <% include ./partials/site_menu %>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 welcome-text">
+                    <h1>Welcome to your landing page!</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

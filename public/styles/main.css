@@ -1,0 +1,12 @@
+body {
+  display: inline-block;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden; 
+  background-image: url(/images/pattern_40.gif);
+  color: white;
+}
+
+.welcome-text {
+  padding-top: 35px;
+}

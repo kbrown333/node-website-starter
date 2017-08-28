@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <% include ./partials/header_tags %>
+    <% if (is_prod) { %>
+    <% include ./partials/prd_scripts %>
+    <% } %>
+    <% if (!is_prod) { %>
+    <% include ./partials/dev_scripts %>
+    <% } %>
+</head>
+<body>
+    <style>
+        .error_text {
+            width: 100%;
+            text-align: center;
+        }
+    </style>
+    <div class="site-wrapper">
+        <% include ./partials/site_menu %>
+        <div class="container">
+            <div class="row">
+                <div class="error_text" style="padding-top: 150px">
+                    <h1>Something went wrong!</h1>
+                </div>
+                <div class="error_text">
+                    <h3>Please try again, we appologize for any inconvenience!</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

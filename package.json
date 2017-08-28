@@ -1,0 +1,36 @@
+{
+  "name": "website-starter",
+  "version": "1.0.0",
+  "description": "Scaffolding for websites running on Node JS servers. High performance server with security and SEO features built in.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [
+    "IoT",
+    "IoTShaman",
+    "Website",
+    "node",
+    "nodejs",
+    "boilerplate",
+    "scaffolding"
+  ],
+  "author": "IoT Shaman",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.16.0",
+    "compression": "^1.6.2",
+    "debug": "^2.6.0",
+    "ejs": "^2.5.5",
+    "express": "^4.14.1",
+    "fs": "0.0.1-security",
+    "morgan": "^1.8.1",
+    "path": "^0.12.7",
+    "route-cache": "^0.4.1",
+    "serve-favicon": "^2.4.1",
+    "sitemap": "^1.11.0",
+    "underscore": "^1.8.3",
+    "x-xss-protection": "^1.0.0",
+    "yuicompressor": "^2.4.8"
+  }
+}

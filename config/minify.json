@@ -1,0 +1,14 @@
+{
+  "sources": [
+    {
+      "type": "css",
+      "input": "/public/styles/",
+      "output": "/public/styles/"
+    },
+    {
+      "type": "js",
+      "input": "/public/scripts/",
+      "output": "/public/scripts/"
+    }
+  ]
+}

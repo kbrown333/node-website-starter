@@ -1,0 +1,11 @@
+{
+  "ssl": false,
+  "site_name": "Your Site Name",
+  "site_desc": "Powered by IoT Shaman",
+  "site_url_base": "http://localhost:3000",
+  "google_address": "https://plus.google.com/u/0/114980982818543357810",
+  "twitter_address": "https://twitter.com/iotshaman",
+  "facebook_address": "https://www.facebook.com/iotshaman",
+  "github_address": "https://github.com/kbrown333",
+  "twitter_user": "@iotshaman"
+}

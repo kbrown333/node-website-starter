@@ -1,0 +1,44 @@
+<!-- META TAGS -->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<% if (locals.page_title != null) { %>
+<title><%= page_title %></title>
+<% } else if (locals.site_name != null) { %>
+<title><%= site_name %></title>
+<% } else { %>
+<title>IoT Shaman</title>
+<% } %>
+<% if (locals.page_desc != null) { %>
+<meta name="description" content="<%= page_desc %>">
+<% } else if (locals.site_desc != null) { %>
+<meta name="description" content="<%= site_desc %>">
+<% } else { %>
+<meta name="description" content="Powered by IoT Shaman">
+<% } %>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta http-equiv="Cache-control" content="public">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<link rel="publisher" href="<%= google_address %>">
+<!-- OPEN GRAPH -->
+<% if (locals.page_title != null) { %>
+	<meta property="og:title" content="<%= page_title %>">
+<% } %>
+<% if (locals.page_type != null) { %>
+	<meta property="og:type" content="<%= page_type %>">
+<% } %>
+<% if (locals.page_url != null) { %>
+	<meta property="og:url" content="<%= page_url %>">
+<% } %>
+<% if (locals.page_desc != null) { %>
+	<meta property="og:description" content="<%= page_desc %>">
+<% } %>
+<!-- TWITTER CARDS -->
+<% if (locals.twitter_user != null && locals.page_title != null) { %>
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:site" content="<%= twitter_user %>">
+	<meta name="twitter:title" content="<%= page_title %>">
+<% } %>
+<% if (locals.page_desc != null) { %>
+	<meta name="twitter:description" content="<%= page_desc %>">
+<% } %>
